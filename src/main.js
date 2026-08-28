@@ -1,5 +1,5 @@
-// Mobile menu toggle
 document.addEventListener('DOMContentLoaded', () => {
+  // Mobile menu toggle
   const menuBtn = document.querySelector('.mobile-menu-btn')
   const mobileMenu = document.querySelector('.mobile-menu')
 
@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.toggle('hidden')
     })
 
-    // Close menu on link click
     mobileMenu.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden')
@@ -54,5 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
     )
 
     sections.forEach((section) => observer.observe(section))
+  }
+
+  // Privacy accordion toggle
+  const privacyToggle = document.getElementById('privacy-toggle')
+  const privacyContent = document.getElementById('privacy-content')
+
+  if (privacyToggle && privacyContent) {
+    privacyToggle.addEventListener('click', () => {
+      privacyContent.classList.toggle('hidden')
+    })
   }
 })
