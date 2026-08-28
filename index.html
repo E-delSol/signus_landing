@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signus - Mediación Emocional para Parejas</title>
+  <meta name="description" content="Signus es una herramienta de apoyo para parejas. Ayuda a expresar disponibilidad de forma discreta, sencilla y respetuosa.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Signus - Mediación Emocional para Parejas">
+  <meta property="og:description" content="Herramienta de apoyo para parejas. Expresa tu disponibilidad de forma discreta, sencilla y respetuosa.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/src/assets/images/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Be+Vietnam+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/src/main.css">
+</head>
+<body class="bg-[#111315] text-[#e1e3e3] font-body-md antialiased pt-[80px]">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto bg-[#111315]/80 backdrop-blur-md shadow-sm border-b border-[#2e3131]">
+    <div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary-fixed">Signus</div>
+    <div class="hidden md:flex gap-gutter items-center">
+      <a class="nav-link font-label-sm text-label-sm text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1 cursor-pointer active:scale-95 transition-transform" href="#que-es">Qué es</a>
+      <a class="nav-link font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed transition-colors duration-300 cursor-pointer active:scale-95 transition-transform pb-1" href="#como-funciona">Cómo funciona</a>
+      <a class="nav-link font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed transition-colors duration-300 cursor-pointer active:scale-95 transition-transform pb-1" href="#demo">Demo</a>
+      <a class="nav-link font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed transition-colors duration-300 cursor-pointer active:scale-95 transition-transform pb-1" href="#privacidad">Privacidad</a>
+    </div>
+    <button class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-fixed/90 transition-colors hidden md:block">
+      Descargar
+    </button>
+    <button class="mobile-menu-btn md:hidden text-primary-fixed">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu hidden fixed top-[72px] left-0 w-full bg-[#111315]/95 backdrop-blur-md z-40 border-b border-[#2e3131] md:hidden">
+    <div class="flex flex-col items-center gap-6 py-8">
+      <a class="font-label-sm text-label-sm text-primary-fixed" href="#que-es">Qué es</a>
+      <a class="font-label-sm text-label-sm text-outline-variant" href="#como-funciona">Cómo funciona</a>
+      <a class="font-label-sm text-label-sm text-outline-variant" href="#demo">Demo</a>
+      <a class="font-label-sm text-label-sm text-outline-variant" href="#privacidad">Privacidad</a>
+      <button class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-8 py-3 rounded-full">Descargar</button>
+    </div>
+  </div>
+
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+
+    <!-- Hero Section -->
+    <section class="py-stack-lg md:py-[120px] flex flex-col md:flex-row items-center gap-stack-lg">
+      <div class="flex-1 space-y-stack-md text-center md:text-left">
+        <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary-fixed">Cuando hablar no resulta fácil.</h1>
+        <p class="font-body-lg text-body-lg text-outline-variant max-w-lg mx-auto md:mx-0">
+          Signus es una herramienta de apoyo para parejas. Ayuda a expresar disponibilidad de forma discreta, sencilla y respetuosa.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-stack-sm">
+          <button class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-primary-fixed/90 transition-colors shadow-sm">Conocer Signus</button>
+          <button class="border-2 border-[#2e3131] text-[#e1e3e3] font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-[#1a1c1d] transition-colors">Cómo funciona</button>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <div class="ghost-frame w-[280px] h-[580px] relative">
+          <img alt="Welcome screen of Signus app" class="w-full h-full object-cover" src="/src/assets/images/hero-phone.webp">
+        </div>
+      </div>
+    </section>
+
+    <!-- Qué es Signus -->
+    <section class="py-stack-lg flex flex-col-reverse md:flex-row items-center gap-stack-lg bg-[#1a1c1d] rounded-xl p-stack-md md:p-stack-lg my-stack-lg" id="que-es">
+      <div class="flex-1 flex justify-center">
+        <div class="ghost-frame w-[260px] h-[540px] relative">
+          <img alt="Pairing screen options" class="w-full h-full object-cover" src="/src/assets/images/screen-pairing.webp">
+        </div>
+      </div>
+      <div class="flex-1 space-y-stack-md">
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e1e3e3]">Una forma sencilla de expresar disponibilidad.</h2>
+        <p class="font-body-md text-body-md text-outline-variant">
+          Diseñada para ser discreta y efectiva, Signus permite a las parejas comunicar su estado emocional y receptividad sin la presión de iniciar una conversación verbal compleja cuando los ánimos están frágiles. Solo vincula tu dispositivo y empieza a usarlo.
+        </p>
+      </div>
+    </section>
+
+    <!-- El problema -->
+    <section class="py-stack-lg text-center max-w-3xl mx-auto space-y-stack-sm my-stack-lg">
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary-fixed">El problema</h2>
+      <p class="font-body-lg text-body-lg text-outline-variant">A veces las palabras sobran, o simplemente no salen. En momentos de tensión, intentar comunicar cómo te sientes puede llevar a malentendidos. Signus elimina esa fricción.</p>
+    </section>
+
+    <!-- Cómo funciona -->
+    <section class="py-stack-lg my-stack-lg" id="como-funciona">
+      <div class="text-center space-y-stack-sm mb-stack-lg">
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e1e3e3]">Cómo funciona</h2>
+        <p class="font-body-md text-body-md text-outline-variant max-w-2xl mx-auto">Un semáforo íntimo para dos. Sin rastro, solo disponibilidad compartida con quien importa.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <div class="flex flex-col items-center space-y-4">
+          <div class="ghost-frame w-[240px] h-[500px] relative">
+            <img alt="Busy status screen" class="w-full h-full object-cover" src="/src/assets/images/screen-busy.webp">
+          </div>
+          <h3 class="font-headline-lg text-xl font-bold text-error">Ocupado / Necesito Paz</h3>
+          <p class="text-center font-body-md text-outline-variant">Indica cuando necesitas espacio de forma clara y sin confrontación.</p>
+        </div>
+        <div class="flex flex-col items-center space-y-4">
+          <div class="ghost-frame w-[240px] h-[500px] relative">
+            <img alt="Available status screen" class="w-full h-full object-cover" src="/src/assets/images/screen-available.webp">
+          </div>
+          <h3 class="font-headline-lg text-xl font-bold text-primary-fixed">Disponible / Receptivo</h3>
+          <p class="text-center font-body-md text-outline-variant">Muestra que estás abierto a hablar o conectar.</p>
+        </div>
+        <div class="flex flex-col items-center space-y-4">
+          <div class="ghost-frame w-[240px] h-[500px] relative">
+            <img alt="Partner needs peace screen" class="w-full h-full object-cover" src="/src/assets/images/screen-partner.webp">
+          </div>
+          <h3 class="font-headline-lg text-xl font-bold text-[#eec209]">Estado de la pareja</h3>
+          <p class="text-center font-body-md text-outline-variant">Conoce el estado de tu pareja al instante, sin adivinanzas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terapia y Fuera de Terapia -->
+    <section class="py-stack-lg grid grid-cols-1 md:grid-cols-2 gap-stack-lg my-stack-lg bg-[#1a1c1d] rounded-xl p-stack-md md:p-stack-lg">
+      <div class="space-y-stack-sm">
+        <h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary-fixed">Para terapia</h3>
+        <p class="font-body-md text-body-md text-outline-variant">Signus es el complemento perfecto para terapias de pareja, facilitando la comunicación no verbal y la gestión de espacios acordados durante las sesiones.</p>
+      </div>
+      <div class="space-y-stack-sm">
+        <h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e1e3e3]">Fuera de terapia</h3>
+        <p class="font-body-md text-body-md text-outline-variant">Útil para el día a día. Construye mejores hábitos de comunicación respetando los tiempos y ritmos de cada uno en la relación.</p>
+      </div>
+    </section>
+
+    <!-- Demo Gallery -->
+    <section class="py-stack-lg my-stack-lg bg-[#111315]" id="demo">
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-center mb-stack-lg text-[#e1e3e3]">Recorrido de la App</h2>
+      <div class="flex flex-col items-center gap-stack-md space-y-stack-md">
+        <div class="ghost-frame w-[300px] h-[620px] relative">
+          <img alt="Welcome screen" class="w-full h-full object-cover" src="/src/assets/images/gallery-welcome.webp">
+        </div>
+        <div class="ghost-frame w-[300px] h-[620px] relative">
+          <img alt="Pairing screen" class="w-full h-full object-cover" src="/src/assets/images/gallery-pairing.webp">
+        </div>
+        <div class="ghost-frame w-[300px] h-[620px] relative">
+          <img alt="Busy status" class="w-full h-full object-cover" src="/src/assets/images/gallery-busy.webp">
+        </div>
+        <div class="ghost-frame w-[300px] h-[620px] relative">
+          <img alt="Available status" class="w-full h-full object-cover" src="/src/assets/images/gallery-available.webp">
+        </div>
+        <div class="ghost-frame w-[300px] h-[620px] relative">
+          <img alt="Partner status" class="w-full h-full object-cover" src="/src/assets/images/gallery-partner.webp">
+        </div>
+        <div class="ghost-frame w-[300px] h-[620px] relative">
+          <img alt="Settings screen" class="w-full h-full object-cover" src="/src/assets/images/gallery-settings.webp">
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacidad, Límite, Proyecto -->
+    <section class="py-stack-lg space-y-stack-lg my-stack-lg" id="privacidad">
+      <div class="bg-[#1a1c1d] rounded-xl p-stack-lg text-center">
+        <h3 class="font-headline-lg text-2xl mb-4 text-primary-fixed">Privacidad desde el diseño</h3>
+        <p class="font-body-md text-outline-variant max-w-3xl mx-auto">Tus datos nunca salen de tu dispositivo de forma legible. No guardamos historiales. Lo que pasa entre vosotros, se queda entre vosotros.</p>
+      </div>
+      <div class="bg-error-container/10 border border-error/20 rounded-xl p-stack-lg text-center">
+        <h3 class="font-headline-lg text-2xl mb-4 text-error">El límite importante</h3>
+        <p class="font-body-md text-outline-variant max-w-3xl mx-auto">Signus es una herramienta de apoyo, no un sustituto del diálogo necesario ni de la ayuda profesional cuando es requerida.</p>
+      </div>
+      <div class="text-center">
+        <h3 class="font-headline-lg text-2xl mb-4 text-[#e1e3e3]">El Proyecto</h3>
+        <p class="font-body-md text-outline-variant max-w-2xl mx-auto">Desarrollado con foco en el bienestar emocional, buscando reducir la fricción en momentos vulnerables.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-[100px] text-center space-y-stack-md bg-[#1a1c1d] rounded-2xl my-stack-lg px-margin-mobile">
+      <h2 class="font-headline-xl text-3xl md:text-4xl text-primary-fixed">Mejora tu comunicación hoy</h2>
+      <p class="font-body-lg text-outline-variant max-w-xl mx-auto">Descarga Signus y empieza a cuidar los tiempos de tu relación.</p>
+      <button class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-10 py-5 rounded-full hover:bg-primary-fixed/90 transition-colors shadow-lg mt-6 text-lg">
+        Descargar Gratis
+      </button>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-stack-lg px-margin-mobile md:px-gutter flex flex-col md:flex-row justify-between items-center gap-base bg-[#0f1112] border-t border-[#2e3131] mt-stack-lg">
+    <div class="font-headline-lg text-headline-lg-mobile font-extrabold text-primary-fixed">Signus</div>
+    <div class="flex gap-gutter items-center flex-wrap justify-center">
+      <a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Privacidad</a>
+      <a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Términos</a>
+      <a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Contacto</a>
+      <a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Terapia</a>
+    </div>
+    <p class="font-body-md text-body-md font-label-sm text-label-sm text-[#e1e3e3] text-center md:text-right">
+      &copy; 2024 Signus - Mediación Emocional para Parejas. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <!-- App JS -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

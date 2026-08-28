@@ -1,0 +1,336 @@
+<!DOCTYPE html><html class="dark" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Signus - Mediación Emocional para Parejas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-variant": "#e1e3e3",
+                "surface-container": "#eceeee",
+                "on-surface-variant": "#3d4a3e",
+                "outline-variant": "#bbcbbb",
+                "on-tertiary-container": "#8e0505",
+                "on-primary-fixed-variant": "#005228",
+                "secondary": "#735c00",
+                "on-primary-fixed": "#00210c",
+                "secondary-fixed-dim": "#eec209",
+                "secondary-fixed": "#ffe084",
+                "on-background": "#191c1d",
+                "surface-bright": "#f8fafa",
+                "on-primary": "#ffffff",
+                "on-secondary-fixed-variant": "#574500",
+                "primary-fixed": "#6bfe9c",
+                "on-surface": "#191c1d",
+                "error-container": "#ffdad6",
+                "on-error-container": "#93000a",
+                "primary-container": "#2ecc71",
+                "tertiary": "#b4271d",
+                "surface-container-high": "#e6e8e9",
+                "secondary-container": "#fed023",
+                "surface-tint": "#006d37",
+                "on-error": "#ffffff",
+                "on-primary-container": "#005027",
+                "surface-container-lowest": "#ffffff",
+                "inverse-primary": "#4ae183",
+                "primary-fixed-dim": "#4ae183",
+                "tertiary-container": "#ff9687",
+                "primary": "#006d37",
+                "surface": "#f8fafa",
+                "on-secondary": "#ffffff",
+                "tertiary-fixed": "#ffdad5",
+                "on-tertiary-fixed-variant": "#910807",
+                "tertiary-fixed-dim": "#ffb4a9",
+                "surface-container-low": "#f2f4f4",
+                "on-secondary-container": "#6f5900",
+                "background": "#f8fafa",
+                "on-secondary-fixed": "#231b00",
+                "on-tertiary-fixed": "#410000",
+                "surface-container-highest": "#e1e3e3",
+                "inverse-surface": "#2e3131",
+                "error": "#ba1a1a",
+                "outline": "#6c7b6d",
+                "surface-dim": "#d8dada",
+                "inverse-on-surface": "#eff1f1",
+                "on-tertiary": "#ffffff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "base": "8px",
+                "stack-lg": "48px",
+                "stack-sm": "12px",
+                "container-max": "1200px",
+                "margin-mobile": "20px",
+                "stack-md": "24px",
+                "gutter": "24px"
+        },
+        "fontFamily": {
+                "label-sm": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "headline-lg-mobile": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Be Vietnam Pro"
+                ],
+                "body-md": [
+                        "Be Vietnam Pro"
+                ],
+                "headline-xl": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "34px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-xl": [
+                        "40px",
+                        {
+                                "lineHeight": "48px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .font-headline-lg { font-family: theme('fontFamily.headline-lg'); font-size: 32px; line-height: 40px; letter-spacing: -0.01em; font-weight: 700; }
+            .font-label-sm { font-family: theme('fontFamily.label-sm'); font-size: 12px; line-height: 16px; letter-spacing: 0.05em; font-weight: 600; }
+            .font-body-md { font-family: theme('fontFamily.body-md'); font-size: 16px; line-height: 24px; font-weight: 400; }
+            .font-headline-xl { font-family: theme('fontFamily.headline-xl'); font-size: 40px; line-height: 48px; letter-spacing: -0.02em; font-weight: 800; }
+            .font-body-lg { font-family: theme('fontFamily.body-lg'); font-size: 18px; line-height: 28px; font-weight: 400; }
+            .font-headline-lg-mobile { font-family: theme('fontFamily.headline-lg-mobile'); font-size: 28px; line-height: 34px; font-weight: 700; }
+            
+            .text-headline-lg { font-size: 32px; line-height: 40px; letter-spacing: -0.01em; font-weight: 700; }
+            .text-label-sm { font-size: 12px; line-height: 16px; letter-spacing: 0.05em; font-weight: 600; }
+            .text-body-md { font-size: 16px; line-height: 24px; font-weight: 400; }
+            .text-headline-xl { font-size: 40px; line-height: 48px; letter-spacing: -0.02em; font-weight: 800; }
+            .text-body-lg { font-size: 18px; line-height: 28px; font-weight: 400; }
+            .text-headline-lg-mobile { font-size: 28px; line-height: 34px; font-weight: 700; }
+        }
+        
+        .soft-shadow {
+            box-shadow: 0px 10px 30px rgba(44, 62, 80, 0.04);
+        }
+        
+        .ghost-frame {
+            border: 8px solid #2e3131;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);
+            background: #191c1d;
+        }
+    </style>
+</head>
+<body class="bg-[#111315] text-[#e1e3e3] font-body-md antialiased pt-[80px]">
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto bg-[#111315]/80 backdrop-blur-md shadow-sm border-b border-[#2e3131]">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary-fixed">Signus</div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-sm text-label-sm text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1 cursor-pointer active:scale-95 transition-transform" href="#que-es">Qué es</a>
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed transition-colors duration-300 cursor-pointer active:scale-95 transition-transform pb-1" href="#como-funciona">Cómo funciona</a>
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed transition-colors duration-300 cursor-pointer active:scale-95 transition-transform pb-1" href="#demo">Demo</a>
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed transition-colors duration-300 cursor-pointer active:scale-95 transition-transform pb-1" href="#privacidad">Privacidad</a>
+</div>
+<button class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-fixed/90 transition-colors hidden md:block">
+            Descargar
+        </button>
+<button class="md:hidden text-primary-fixed">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<!-- Hero Section -->
+<section class="py-stack-lg md:py-[120px] flex flex-col md:flex-row items-center gap-stack-lg">
+<div class="flex-1 space-y-stack-md text-center md:text-left">
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary-fixed">Cuando hablar no resulta fácil.</h1>
+<p class="font-body-lg text-body-lg text-outline-variant max-w-lg mx-auto md:mx-0">
+                    Signus es una herramienta de apoyo para parejas. Ayuda a expresar disponibilidad de forma discreta, sencilla y respetuosa.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-stack-sm">
+<button class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-primary-fixed/90 transition-colors shadow-sm">Conocer Signus</button>
+<button class="border-2 border-[#2e3131] text-[#e1e3e3] font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-[#1a1c1d] transition-colors">Cómo funciona</button>
+</div>
+</div>
+<div class="flex-1 flex justify-center">
+<div class="ghost-frame w-[280px] h-[580px] relative">
+<img alt="Welcome screen of Signus app" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsyCqvoZjLZrKU3A2FjLwx-xiLmPVX5qg2jQWvrpSsoDTd11ONrD-bfERR95HaD-6h8EBvh30QZTarqJS4uFu5_Q9kM8E1jNV2vNSCwilnsTQW_QSkd68_GUygGKA3VUXD6Mzy7ZhmrDUMV-Yhjk2_pYnGcbeWdpkZhqXx28gWEiTykzdUSdpSqTPu4VasYyu5tNsVwXdOO8sslvoKgJ4yC3vz3j9egoCjCcE9aPd-ljy8LeqEnLiPxv0JR-3QtOdBYA">
+</div>
+</div>
+</section>
+<!-- Qué es Signus -->
+<section class="py-stack-lg flex flex-col-reverse md:flex-row items-center gap-stack-lg bg-[#1a1c1d] rounded-xl p-stack-md md:p-stack-lg my-stack-lg" id="que-es">
+<div class="flex-1 flex justify-center">
+<div class="ghost-frame w-[260px] h-[540px] relative">
+<img alt="Pairing screen options" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4QXB_1gIbI92GEdJI6-mU8GBj4ZzlS2EI_8e_layOxP1qOFBgBicG1AEIM5TV58BCAb1BquK7aIbkRy0iUaSI-fxKKHojjsPuTiB56rL1xmtiCwQwTL_7BxroG54ET_ScCsKYRouA22qZBM1l6S_eLnI0Fppx-hve6Dw0Xy32Amb2scdDVoYHz-oVsIuRmp9OG33d-OsoLRa4Pf7D004FVArDRTJyJIZDYNb_HE2_lrGQd9US94UV69tSLplYvj3Upw">
+</div>
+</div>
+<div class="flex-1 space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e1e3e3]">Una forma sencilla de expresar disponibilidad.</h2>
+<p class="font-body-md text-body-md text-outline-variant">
+                    Diseñada para ser discreta y efectiva, Signus permite a las parejas comunicar su estado emocional y receptividad sin la presión de iniciar una conversación verbal compleja cuando los ánimos están frágiles. Solo vincula tu dispositivo y empieza a usarlo.
+                </p>
+</div>
+</section>
+<!-- El problema -->
+<section class="py-stack-lg text-center max-w-3xl mx-auto space-y-stack-sm my-stack-lg">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary-fixed">El problema</h2>
+<p class="font-body-lg text-body-lg text-outline-variant">A veces las palabras sobran, o simplemente no salen. En momentos de tensión, intentar comunicar cómo te sientes puede llevar a malentendidos. Signus elimina esa fricción.</p>
+</section>
+<!-- Cómo funciona -->
+<section class="py-stack-lg my-stack-lg" id="como-funciona">
+<div class="text-center space-y-stack-sm mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e1e3e3]">Cómo funciona</h2>
+<p class="font-body-md text-body-md text-outline-variant max-w-2xl mx-auto">Un semáforo íntimo para dos. Sin rastro, solo disponibilidad compartida con quien importa.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="flex flex-col items-center space-y-4">
+<div class="ghost-frame w-[240px] h-[500px] relative">
+<img alt="Busy status screen" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Qrm7Vj7lpbTiUh9N-0WcZjX6cRe1lIZGv_a4e4EDyD6kbHgbNpmsM8zNVYGNlhjrlo5eQArxSRWmaD15kdVCFzWizOtCatQVpF8kmrreAmcQZFw7b0VY9GTi4KbtzQKjnKfL92AMazN5zLKrMT0ZYSg4dNi2sAYx0W5tRHrffw-KK2XHBeEZIqibHb6Py8uPuWQHiEuto39A4wTgnf5WcyyoGPrWvePgJMIY5FVhcj67oL472yvS62BMqqg36e655Q">
+</div>
+<h3 class="font-headline-lg text-xl font-bold text-error">Ocupado / Necesito Paz</h3>
+<p class="text-center font-body-md text-outline-variant">Indica cuando necesitas espacio de forma clara y sin confrontación.</p>
+</div>
+<div class="flex flex-col items-center space-y-4">
+<div class="ghost-frame w-[240px] h-[500px] relative">
+<img alt="Available status screen" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZdh6TLhAS110f2I0LrLR-Zux0OHA75nc-IIs-MRzPFeq3hdpY0-k2CKFomW3EMkNSBXl48V2l9Yz18voV6Mk8ZezEAo-U6aAXGU40qxIk1O4n2iVA5BzEVuGQ415w2qgmWOKVvoNYxCoSa9JhW1jzGhR1aRMtTPln2wOLqA8qbPPEEoGMVzYO4eAwOZJEpLLcfxgJ2reGdEFOOlFw0zOvoi8jV4IitDhX6Jwh2X4MZut4c9Y6sexRdManh0APrmlJUw">
+</div>
+<h3 class="font-headline-lg text-xl font-bold text-primary-fixed">Disponible / Receptivo</h3>
+<p class="text-center font-body-md text-outline-variant">Muestra que estás abierto a hablar o conectar.</p>
+</div>
+<div class="flex flex-col items-center space-y-4">
+<div class="ghost-frame w-[240px] h-[500px] relative">
+<img alt="Partner needs peace screen" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9kmqCeBRKWDHpFuKR9Rw3hs3QmKvgFTTme_58rU8XqkwGwoXRDCMsY1HWBD4cvQ9PJKMm5_2UDfRD-kmnSaT_vTlTiCda8qnYco0ThE1xeY70T4fTzepbdGVzwJNvP4CYhqivzTEW-JCrQE_YVYlPQsIW-d_9WJLJYPQgxrIQE93hjb6IxhZOiABGsVtCmOP7-YG1K5lopsATvEttPTvz3ZAJuaBYN_B34XfigTazup8JTs6sEX-OAiQCOLfBDWJz7A">
+</div>
+<h3 class="font-headline-lg text-xl font-bold text-[#eec209]">Estado de la pareja</h3>
+<p class="text-center font-body-md text-outline-variant">Conoce el estado de tu pareja al instante, sin adivinanzas.</p>
+</div>
+</div>
+</section>
+<!-- Terapia y Fuera de Terapia -->
+<section class="py-stack-lg grid grid-cols-1 md:grid-cols-2 gap-stack-lg my-stack-lg bg-[#1a1c1d] rounded-xl p-stack-md md:p-stack-lg">
+<div class="space-y-stack-sm">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary-fixed">Para terapia</h3>
+<p class="font-body-md text-body-md text-outline-variant">Signus es el complemento perfecto para terapias de pareja, facilitando la comunicación no verbal y la gestión de espacios acordados durante las sesiones.</p>
+</div>
+<div class="space-y-stack-sm">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e1e3e3]">Fuera de terapia</h3>
+<p class="font-body-md text-body-md text-outline-variant">Útil para el día a día. Construye mejores hábitos de comunicación respetando los tiempos y ritmos de cada uno en la relación.</p>
+</div>
+</section>
+<!-- Demo Gallery -->
+<section class="py-stack-lg my-stack-lg bg-[#111315]" id="demo">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-center mb-stack-lg text-[#e1e3e3]">Recorrido de la App</h2>
+<div class="flex flex-col items-center gap-stack-md space-y-stack-md">
+<div class="ghost-frame w-[300px] h-[620px] relative">
+<img alt="Welcome screen" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyWtFecxf3X3No0FiDlUWMP71XA8L2pf01XsRadOtTQWHt5G15DrQlJopRXPihXRlD9iGnX3j_4QvxDs8cOo7-lSn6LRwC-GFuHbpxizG9DQFQDlxS-xcKSIBXwkJLvbYx6XNFBZzog-AkqTShWgvSuooE2ztwDJKlaI89kF84vCedYuwfsqZFhMSJU1XMhY-0Xrkohdj0GK2P2hylv-jcJ94iAuhuVBg4pHBRrGXlF_yFyG7dSWMxyh_mNc6ozktjwQ">
+</div>
+<div class="ghost-frame w-[300px] h-[620px] relative">
+<img alt="Pairing screen" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPd97SY7ut97g4Vx2xyOiogZzy3Qwwq7KUlXhIUG3bh0DZQ13TzKcvJTcXIQaN1yTUOxmZz1q_GioszSZQHCFDhiFnO-Ra6wg2_A_xmj1LG9DhgAdnoJT4icXXRXXvMXQiRdQcqEm-PGpnoqybXH5jZWqPNuyVb2ZNp-jYwdaGuQPzRck5f-svYP4b-WFShFAK_V7-mOYkbq807_WUeOYLjLQl4DcGN924dlWI5UO5MhXdRTzN3z_FsC6RY1-nJ2zcVg">
+</div>
+<div class="ghost-frame w-[300px] h-[620px] relative">
+<img alt="Busy status" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKReKJOJNoUkb_WapIxQ1x9CcnS-EU91eJ7RwljveWrt_H4tqcrg30GBrBYDc2QQKXTiKzr787mf84WOZfH12UZrg-kUHo_rKc4vixDMq0B00t7MFyihhkfbW7zQxb6vWPfAIIEXrF3pWYbKnZUN_HQgONJzNQrkqkeMLdb8dEFe1Lgi9Z1uVzRwv5ZtNE8Yemav-46ykVJ1TEWTs8clVOCnib50y9kxdRzmxtcLjKBOFcEzZBDhM_0w9fakwrvcjIIw">
+</div>
+<div class="ghost-frame w-[300px] h-[620px] relative">
+<img alt="Available status" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmvBQTFcsJJ7v6s1tdQ89DBpq4jOmME3QfzvRgdEyrn9chGk9s1-DPtCrfu_MIRwZS7_EIR_Si07vJnVj_4rxGGv4h1g2lt9Dkht1ka3aCz1Se-Aq2cV9shANr-7WCQRM0iL_ds5nDxNNaS7BCetBYHLtHbpKuTUfBnobO1SB6sWnBepw4pMKn1qMnimVrOHo8r3oUr3oNAY8DCETtdsEuhvKFMDLC4-YfvU6CzsYtMUT6m7S4xF8BQt9_1L6LG8SKeg">
+</div>
+<div class="ghost-frame w-[300px] h-[620px] relative">
+<img alt="Partner status" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi_1jrJfGeVISjZpxRQ96L48jkXoaJHSrapWcRauGcPD9sRChrw42gCsxeq2xIkgOG0ECa1SVIxzJ9mXvczNdZcnPlUv_eUoBZT8eOI8uxGoSdLBGGhaXY87vHDPHocxMi4Os37DaROAFTVxteKePri9NDMfUfmp4qYbR5riWKe5q_XKzPBwnNN9rAsWcCkaMldcKbARCyULIMOFgCa_bmTHgQ92eSRLqDR5qE5n7XZUwNnhgG1-uHLW697-UZbh11mw">
+</div>
+<div class="ghost-frame w-[300px] h-[620px] relative">
+<img alt="Settings screen" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAW94rcxam5Mtbw1qZpD3VAV4wnCTuOS8xsLYbb7wjcqyb5HdvR9sHZM3FCB_0g9NbDgOTDvDX8K3lNqzxv_Mtrfzo4c2fkcJW96VLGnAmI7D1OqMnPQOZDGWbDV5JwCwwXGN_K1vnKXXoMXndV1loNKzxah3VnY5LYqOA_ZTMpip6hJLiOKiVoiDRBsN6UURXLmaSoBqFnKIoE-r0qGK7wLfp-t-Fgkttygf73hHkVlJR76WAwzrfB5sgMSIg7OCFTQ">
+</div>
+</div>
+</section>
+<!-- Privacidad, Límite, Proyecto -->
+<section class="py-stack-lg space-y-stack-lg my-stack-lg" id="privacidad">
+<div class="bg-[#1a1c1d] rounded-xl p-stack-lg text-center">
+<h3 class="font-headline-lg text-2xl mb-4 text-primary-fixed">Privacidad desde el diseño</h3>
+<p class="font-body-md text-outline-variant max-w-3xl mx-auto">Tus datos nunca salen de tu dispositivo de forma legible. No guardamos historiales. Lo que pasa entre vosotros, se queda entre vosotros.</p>
+</div>
+<div class="bg-error-container/10 border border-error/20 rounded-xl p-stack-lg text-center">
+<h3 class="font-headline-lg text-2xl mb-4 text-error">El límite importante</h3>
+<p class="font-body-md text-outline-variant max-w-3xl mx-auto">Signus es una herramienta de apoyo, no un sustituto del diálogo necesario ni de la ayuda profesional cuando es requerida.</p>
+</div>
+<div class="text-center">
+<h3 class="font-headline-lg text-2xl mb-4 text-[#e1e3e3]">El Proyecto</h3>
+<p class="font-body-md text-outline-variant max-w-2xl mx-auto">Desarrollado con foco en el bienestar emocional, buscando reducir la fricción en momentos vulnerables.</p>
+</div>
+</section>
+<!-- CTA -->
+<section class="py-[100px] text-center space-y-stack-md bg-[#1a1c1d] rounded-2xl my-stack-lg px-margin-mobile">
+<h2 class="font-headline-xl text-3xl md:text-4xl text-primary-fixed">Mejora tu comunicación hoy</h2>
+<p class="font-body-lg text-outline-variant max-w-xl mx-auto">Descarga Signus y empieza a cuidar los tiempos de tu relación.</p>
+<button class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-10 py-5 rounded-full hover:bg-primary-fixed/90 transition-colors shadow-lg mt-6 text-lg">
+            Descargar Gratis
+        </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-mobile md:px-gutter flex flex-col md:flex-row justify-between items-center gap-base bg-[#0f1112] border-t border-[#2e3131] mt-stack-lg">
+<div class="font-headline-lg text-headline-lg-mobile font-extrabold text-primary-fixed">Signus</div>
+<div class="flex gap-gutter items-center flex-wrap justify-center">
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Privacidad</a>
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Términos</a>
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Contacto</a>
+<a class="font-label-sm text-label-sm text-outline-variant hover:text-primary-fixed underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Terapia</a>
+</div>
+<p class="font-body-md text-body-md font-label-sm text-label-sm text-[#e1e3e3] text-center md:text-right">
+            © 2024 Signus - Mediación Emocional para Parejas. Todos los derechos reservados.
+        </p>
+</footer>
+</body></html>

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities matching original prototype */
+@layer utilities {
+  .font-headline-lg {
+    font-family: theme('fontFamily.headline-lg');
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+  .font-label-sm {
+    font-family: theme('fontFamily.label-sm');
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+  .font-body-md {
+    font-family: theme('fontFamily.body-md');
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .font-headline-xl {
+    font-family: theme('fontFamily.headline-xl');
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+  }
+  .font-body-lg {
+    font-family: theme('fontFamily.body-lg');
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+  .font-headline-lg-mobile {
+    font-family: theme('fontFamily.headline-lg-mobile');
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+  }
+}
+
+/* Component styles */
+@layer components {
+  .soft-shadow {
+    box-shadow: 0px 10px 30px rgba(44, 62, 80, 0.04);
+  }
+
+  .ghost-frame {
+    border: 8px solid #2e3131;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    background: #191c1d;
+  }
+}
