@@ -151,13 +151,8 @@ signus_landing/
 
 ## 📄 License
 
-This project is **source-available but not open source**.
-
-You may view and study the code, but you are not allowed to:
-
-* use it for commercial purposes
-* deploy it as a service
-* build competing products
+MIT License
+See [LICENSE](LICENSE)
 
 ---
 
