@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/E-delSol/signus_landing/actions/workflows/deploy.yml"><img src="https://github.com/E-delSol/signus_landing/actions/workflows/deploy.yml/badge.svg" alt="Deploy"></a>
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
-  <a href="https://edelsol.github.io/signus_landing/"><img src="https://img.shields.io/badge/Live-Website-brightgreen" alt="Live"></a>
+  <a href="https://e-delsol.github.io/signus_landing/"><img src="https://img.shields.io/badge/Live-Website-brightgreen" alt="Live"></a>
 </p>
 
 ---
@@ -30,6 +30,8 @@ Signus is structured as a multi-repository system:
 * [signus_back](https://github.com/E-delSol/signus_back) — Backend API (Ktor + WebSockets)
 * [signus_infra](https://github.com/E-delSol/signus_infra) — Infrastructure and deployment
 * **signus_landing** — Landing page (this repository)
+
+🌐 **Live:** [e-delsol.github.io/signus_landing](https://e-delsol.github.io/signus_landing/)
 
 ---
 
