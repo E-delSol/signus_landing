@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/E-delSol/signus_landing/actions/workflows/deploy.yml"><img src="https://github.com/E-delSol/signus_landing/actions/workflows/deploy.yml/badge.svg" alt="Deploy"></a>
-  <img src="https://img.shields.io/badge/license-source--available-blue" alt="License">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
   <a href="https://edelsol.github.io/signus_landing/"><img src="https://img.shields.io/badge/Live-Website-brightgreen" alt="Live"></a>
 </p>
 
