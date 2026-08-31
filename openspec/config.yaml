@@ -1,8 +1,0 @@
-# OpenSpec configuration
-# artifact_store.mode: both -> openspec files + engram persistence
-artifact_store:
-  mode: both
-project: signus_landing
-execution_mode: interactive
-delivery_strategy: single-pr
-review_budget_lines: 400
